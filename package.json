@@ -1,0 +1,30 @@
+{
+  "name": "my-erc-token-2",
+  "version": "1.0.4",
+  "main": "index.js",
+  "author": "<eduardodudunog@gmail.com>",
+  "keywords": [
+    "erc",
+    "builder",
+    "my-erc-token-2"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dudunog/my-erc-token.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dudunog/my-erc-token-2/issues"
+  },
+  "homepage": "https://github.com/dudunog/my-erc-token-2#readme",
+  "scripts": {
+    "airdrop": "hardhat run scripts/deployAirdrop.js --network goerli",
+    "deploy": "hardhat run scripts/deploy.js --network goerli",
+    "test": "hardhat test ./src/test.js"
+  },
+  "dependencies": {
+    "@descentralizado/wallet-frontend-template-vite": "^0.0.2",
+    "erc-builder": "^1.0.1",
+    "my-erc-token": "^1.0.0"
+  }
+}
